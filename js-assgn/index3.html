@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Get Date</title>
+    <script>
+        function date() {
+            var todayDate = new Date();
+            var thisDay = todayDate.getDate();
+            var month = todayDate.getUTCMonth();
+            var year = todayDate.getUTCFullYear();
+            var result = "Date is :" + thisDay + " - " + month + " - " + year ;
+            document.getElementById('dis').innerHTML = result
+        }
+    </script>
+</head>
+<body>
+    <p id='dis'>Display date</p>
+    <button type = 'submit' onclick= date()> Click to display date </button>
+
+    
+</body>
+</html>
