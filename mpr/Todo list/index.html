@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sticky notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div id="heading">
+      <h1>To-do list</h1>
+    </div>
+    <div id="form">
+      <form id="inputForm">
+        <input
+          type="text"
+          class="inputText"
+          placeholder="Title"
+          id="new-note-title-input"
+          autocomplete="off"
+          required
+          autofocus
+        />
+        <input
+          class="inputText"
+          type="text"
+          placeholder="Note Content"
+          id="new-note-body-input"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="btn">
+          Create Note
+        </button>
+      </form>
+    </div>
+
+    <h3 id="no-notes">No Notes Found, Add one!</h3>
+    <ul id="notes"></ul>
+    <script src="script2.js"></script>
+  </body>
+</html>
